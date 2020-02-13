@@ -3,6 +3,7 @@ package com.adn.digital.smscampaign.controller;
 import com.adn.digital.smscampaign.model.dto.CampaignResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -13,6 +14,7 @@ public class SmsCampaignController {
 
     }
 
+    @GetMapping("/start")
     public CampaignResponse startCampaign() {
 
 
