@@ -9,6 +9,4 @@ import java.util.List;
 
 @Repository
 public interface CampaignRepository extends CrudRepository<Campaign, String> {
-
-    List<Campaign> findAll();
 }
