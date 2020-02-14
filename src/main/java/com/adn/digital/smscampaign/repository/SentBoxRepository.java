@@ -1,0 +1,10 @@
+package com.adn.digital.smscampaign.repository;
+
+import com.adn.digital.smscampaign.model.dao.Recipient;
+import com.adn.digital.smscampaign.model.dao.SentBox;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface SentBoxRepository extends CrudRepository<SentBox, String> {
+}
