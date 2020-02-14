@@ -41,7 +41,7 @@ public class CampaignServiceImpl implements CampaignService {
     }
 
     @Async
-    public CompletableFuture<List<SentBox>> sentBoxUpdate(Iterator<Campaign> campaigns) {
+    protected CompletableFuture<List<SentBox>> sentBoxUpdate(Iterator<Campaign> campaigns) {
 
         List<SentBox> sentBoxes = new ArrayList<>();
 
